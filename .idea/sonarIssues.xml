@@ -3,6 +3,16 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/handle/HeatBeatEchoHandler2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/handle/HeatBeatEchoHandlerProtoBuf.java">
           <value>
             <set />
@@ -14,6 +24,21 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/init/CustomerHandleInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-common/src/main/java/com/haoxy/common/encode/CustomProtobufDecoder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-common/src/main/java/com/haoxy/common/encode/CustomProtobufEncoder.java">
           <value>
             <set />
           </value>

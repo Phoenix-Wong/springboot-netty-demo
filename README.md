@@ -366,8 +366,55 @@ public class HeartBeatServer {
 }
 ```
 
+目录结构如下:
+
+![](./netty-server/server.png)
+
+#### 给指定的客户端发送消息
+
+刚刚已经使用一个NettySocketHolder保存在线的设备, 设备的IMEI作为Map的key
+
+现在编写一个Service给指定设备发送消息(根据IMEI给设备发)
+
+```java
+    public String sendMsg(String deviceImei, HeartBeatProtoBuf.HeartBeatPingDTO controlDTO) {
+
+        Map<String, NioSocketChannel> map = NettySocketHolder.getMAP();
+        NioSocketChannel nioSocketChannel = map.get(deviceImei);
+        if (Objects.nonNull(nioSocketChannel)) {
+            nioSocketChannel.writeAndFlush(controlDTO);
+            return String.format("已经发送消息给该客户端:%s", deviceImei);
+        } else {
+            return ("该设备离线, sorry");
+        }
+    }
+```
 
 
-1.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-2.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-3.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+HTTP接口
+
+```java
+@RestController
+@RequestMapping("/dc")
+public class DeviceController {
+    private final static Logger LOGGER = LoggerFactory.getLogger(DeviceController.class);
+
+    @Autowired
+    private SendMsgToDeviceService sendMsgToDeviceService;
+
+    @GetMapping("/{imei}/{content}")
+    public String sendMsg(@PathVariable("imei") String imei, @PathVariable("content") String content) {
+//        "78a8656545454a545e"
+        HeartBeatProtoBuf.HeartBeatPingDTO.Builder builder = HeartBeatProtoBuf.HeartBeatPingDTO.newBuilder();
+        builder.setContent(content);
+        builder.setId(new Random().nextInt(60_000));
+        return sendMsgToDeviceService.sendMsg(imei,builder.build());
+    }
+}
+```
+
+最后在网页端发送给客户端(```IMEI:78a8656545454a545e```)发送消息
+
+![](./netty-server/sendMsg.png)
+
