@@ -1,0 +1,8 @@
+protobuf.exe的使用方法
+在有exe文件的目录下cmd运行
+
+protoc ./HeatBeatProto.proto --java_out=./
+
+上面这句的意思是讲当前目录下的HeatBeatProto.proto生成java的类,存放到当前目录下(./  点  斜杠代表当前目录的意思)
+
+

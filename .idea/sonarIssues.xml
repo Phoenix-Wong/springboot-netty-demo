@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/handle/HeatBeatEchoHandlerProtoBuf.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/heart/HeartbeatClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/init/CustomerHandleInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/java/com/haoxy/server/init/HeartbeatInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-client/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/handler/HeatBeatEchoHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/heart/HeartBeatClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/init/CustomerHandleInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-client/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufDecoder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufEncoder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/DeviceControlProto.proto">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/HeatBeatProto.proto">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/protobuf_Use _Method.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/DeviceController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/SendMsgToDeviceService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/handler/HeartBeatSimpleHandle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/init/HeartbeatInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/util/NettySocketHolder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/netty-server/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+syntax = "proto3"; // 声明为protobuf 3定义文件
+
+option java_package = "com.cs.common.model"; // 声明生成消息类的java包路径
+option java_outer_classname = "HeartBeatProtoBuf"; // 声明生成消息类的类名
+
+// c->s (客户端Client发送给服务端Server) 相当于回复 pong
+message HeartBeatPongDTO {
+    int32 msgType = 1; // 默认:"heartBeat"，详见
+    string imei = 2; //当前设备imei
+    string deviceIp	= 3; // 设备ip
+    string deviceResolution = 4;//终端屏幕分辨率
+	int32 cameraWorkStatus = 5; //摄像头运行状态 0：异常 1：正常'
+	int32 deviceVolume = 6; // 终端音量
+	string screenBrightness = 7; //屏幕亮度 默认20
+	int32 isBlacklight = 8; //是否背光（0：否 1：是）
+	int32 isRootStart = 9;//是否开机自启（0：否 1：是）
+    int32 isGuard = 10; //是否开启进程守护（0 否 1：是）
+    int32 isStatus = 11; //是否显示状态栏（0：否 1：是）
+}
+
+// s->c (服务端Server发送给客户端Client) 相当于ping
+message HeartBeatPingDTO {
+    int32 id = 1; // 
+    string content = 2; //content,消息的内容,比如说:"are you alive?"
+}
+
