@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/handle/FileUploadClientHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/handle/HeatBeatEchoHandler2.java">
           <value>
             <set />
@@ -28,6 +33,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/init/FileUploadInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/java/com/haoxy/client/util/Ts.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-client/src/main/resources/application.properties">
           <value>
             <set />
@@ -43,7 +58,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-common/src/main/java/com/haoxy/common/model/FileUploadFile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/java/com/haoxy/server/handle/FileUploadServerHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/java/com/haoxy/server/heart/HeartBeatServer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/java/com/haoxy/server/init/FileUploadInitalizer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/java/com/haoxy/server/init/HeartbeatInitializer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/springboot-netty-master/springboot-netty-master/netty-server/src/main/resources/application.properties">
           <value>
             <set />
           </value>
@@ -149,6 +189,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/workProject/jar-demo/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/workProject/newEdition/new-manager1.5/.idea/httpRequests/http-requests-log.http">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/workProject/newEdition/new-manager1.5/oohadshow/src/main/java/com/oohad/oohadshowmanager/filter/AOPTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/workProject/newEdition/new-manager1.5/oohadshow/src/test/java/com/oohad/oohadshowmanager/service/customsearch/CustomSearchServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/workProject/newEdition/new-mi-dev1.6/oohadshow/src/main/java/com/oohad/oohadshowmi/controller/AccurateShowController.java">
           <value>
             <set />
           </value>

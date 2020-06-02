@@ -418,3 +418,11 @@ public class DeviceController {
 
 ![](./netty-server/sendMsg.png)
 
+# 下面是关于文件传输的 
+来自于下面两篇blog, 这次我上传过来的几乎的复制第一篇博客的内容  
+
+[Netty学习(十)-Netty文件上传](https://blog.csdn.net/a953713428/article/details/72792909) 
+
+[NETTY4.X 传输文件](https://www.cnblogs.com/cq-jiang/p/7620425.html)
+
+暂时还没有添加对应的代码上去,因为我觉得上来2个例子有待商榷.

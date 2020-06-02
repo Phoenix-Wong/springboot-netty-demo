@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd6dcd84-d0dd-4613-b1c6-8c38ccac3982" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netty-server/sendMsg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/springboot2.1.4_netty4.1.50.Final_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/springboot2.1.4_netty4.1.50.Final_demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-client/target/" />
@@ -22,31 +18,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/handler/HeartBeatSimpleHandle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufDecoder.java">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="520">
+              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -54,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            <state relative-caret-position="740">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/init/HeartbeatInitializer.java">
+        <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/heart/HeartBeatClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="50" />
+            <state relative-caret-position="560">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/handler/HeatBeatEchoHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,20 +68,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/util/NettySocketHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="200">
+              <caret line="13" column="53" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="53" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/DeviceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+            <state relative-caret-position="360">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,25 +89,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/init/CustomerHandleInitializer.java">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/SendMsgToDeviceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="610">
+                <caret line="427" column="31" selection-start-line="427" selection-start-column="31" selection-end-line="427" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="115" column="60" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-client/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -152,21 +148,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/DeviceControlProto.proto" />
         <option value="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/protobuf_Use _Method.txt" />
         <option value="$PROJECT_DIR$/netty-common/src/main/resources/protobuf/HeatBeatProto.proto" />
         <option value="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/model/HeartBeatProtoBuf.java" />
         <option value="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufEncoder.java" />
         <option value="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufDecoder.java" />
-        <option value="$PROJECT_DIR$/netty-client/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/netty-common/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/init/CustomerHandleInitializer.java" />
         <option value="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/heart/HeartBeatClient.java" />
         <option value="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/handler/HeatBeatEchoHandler.java" />
         <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/util/NettySocketHolder.java" />
-        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/init/HeartbeatInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java" />
         <option value="$PROJECT_DIR$/netty-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/handler/HeartBeatSimpleHandle.java" />
         <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/SendMsgToDeviceService.java" />
@@ -174,6 +165,11 @@
         <option value="$PROJECT_DIR$/netty-client/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/netty-server/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java" />
+        <option value="$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/init/CustomerHandleInitializer.java" />
+        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/init/HeartbeatInitializer.java" />
+        <option value="$PROJECT_DIR$/netty-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -211,8 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,6 +345,12 @@
             <path>
               <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="springboot2.1.4_netty4.1.50.Final_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-common" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="462c0819:PsiDirectoryNode" />
               <item name="netty-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,10 +441,78 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot2.1.4_netty4.1.50.Final_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="locks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,7 +525,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode" />
+    <property name="last_opened_file_path" value="F:/springboot2_netty4_demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -527,7 +595,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590630272428</updated>
-      <workItem from="1590630273766" duration="20502000" />
+      <workItem from="1590630273766" duration="34780000" />
+      <workItem from="1590974575765" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="demo完成">
       <created>1590655247221</created>
@@ -536,38 +605,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590655247221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加主动给某客户端发送消息(根据设备IMEI)">
+      <created>1590659296683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590659296683</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20502000" />
+    <option name="totallyTimeSpent" value="37356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Web" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15528281" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2054429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.4809989" />
-      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.110749185" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Sequence" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="MyBatis Log" />
-      <window_info anchor="bottom" id="Tail" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Debug with VisualVM" />
-      <window_info anchor="bottom" id="SonarQube" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.13789359" />
@@ -575,16 +634,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.32977587" />
-      <window_info anchor="right" id="Word Book" side_tool="true" />
-      <window_info anchor="right" id="Key Promoter X" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="RestServices" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.110749185" />
+      <window_info anchor="bottom" id="Docker" order="10" />
+      <window_info anchor="bottom" id="Sequence" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="13" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="17" />
+      <window_info anchor="bottom" id="Version Control" order="18" />
+      <window_info anchor="bottom" id="Messages" order="19" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="20" />
+      <window_info anchor="bottom" id="SonarQube" order="21" />
+      <window_info anchor="bottom" id="MyBatis Log" order="22" />
+      <window_info anchor="bottom" id="Tail" order="23" />
+      <window_info anchor="bottom" id="Run Dashboard" order="24" visible="true" weight="0.15852335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32977587" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Word Book" order="5" side_tool="true" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="RestServices" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,24 +669,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="demo完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo完成" />
+    <MESSAGE value="添加主动给某客户端发送消息(根据设备IMEI)" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加主动给某客户端发送消息(根据设备IMEI)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-common/src/test/java/com/cs/common/NettyCommonApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/protobuf/DeviceControlS-C.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-common/src/test/java/com/cs/common/NettyCommonApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/protobuf/DeviceControlS-C.proto" />
     <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/protobuf/protobuf_Use _Method.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -624,13 +690,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/NettyCommonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/NettyCommonApplication.java" />
     <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/protobuf/com/cs/common/model/HeartBeatProtoBuf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -641,13 +701,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-common/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/netty-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -655,39 +709,6 @@
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/heart/HeartBeatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="47" column="73" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#688#710#1" expanded="true" />
-            <element signature="e#750#772#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/model/HeartBeatProtoBuf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="177" column="28" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-client/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,49 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/util/NettySocketHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/SendMsgToDeviceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="22" selection-start-line="22" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="704">
-            <caret line="403" column="30" selection-start-line="403" selection-start-column="30" selection-end-line="403" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -782,10 +764,70 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/DeviceController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="444">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="177" column="17" selection-start-line="177" selection-start-column="17" selection-end-line="177" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="33" column="89" lean-forward="true" selection-start-line="33" selection-start-column="89" selection-end-line="33" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" column="68" lean-forward="true" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
+          <folding>
+            <element signature="e#1386#1594#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/handler/HeartBeatSimpleHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -794,35 +836,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/init/CustomerHandleInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+        <state relative-caret-position="201">
+          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.50.Final/netty-all-4.1.50.Final-sources.jar!/io/netty/channel/ChannelInitializer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/javax/annotation/PostConstruct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="80">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/model/HeartBeatProtoBuf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="182" column="54" lean-forward="true" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/init/HeartbeatInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/handler/HeatBeatEchoHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="540">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,8 +878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
+        <state relative-caret-position="1140">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -841,21 +888,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/com/cs/common/encode/CustomProtobufEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        <state relative-caret-position="740">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/handler/HeartBeatSimpleHandle.java">
+    <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/heart/HeartBeatClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="560">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-client/src/main/java/com/cs/client/handler/HeatBeatEchoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/util/NettySocketHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/DeviceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/devicecontrol/SendMsgToDeviceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/cs/server/heart/HeartBeatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="610">
+            <caret line="427" column="31" selection-start-line="427" selection-start-column="31" selection-end-line="427" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="115" column="60" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="60" />
         </state>
       </provider>
     </entry>
