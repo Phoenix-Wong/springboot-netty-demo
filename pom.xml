@@ -17,6 +17,7 @@
         <module>netty-client</module>
         <module>netty-server</module>
         <module>netty-common</module>
+        <module>netty-client-2</module>
     </modules>
     <properties>
         <junit.version>4.11</junit.version>
