@@ -1,4 +1,4 @@
-# springboot2.1.4_netty4.1.50.Final_demo
+# springboot2.1.4+netty4.1.50.Final整合
 
 #### 介绍
 springboot整合netty的demo,并使用Google的protobuf作为心跳数据传输协议
@@ -417,12 +417,3 @@ public class DeviceController {
 最后在网页端发送给客户端(```IMEI:78a8656545454a545e```)发送消息
 
 ![](./netty-server/sendMsg.png)
-
-# 下面是关于文件传输的 
-来自于下面两篇blog, 这次我上传过来的几乎的复制第一篇博客的内容  
-
-[Netty学习(十)-Netty文件上传](https://blog.csdn.net/a953713428/article/details/72792909) 
-
-[NETTY4.X 传输文件](https://www.cnblogs.com/cq-jiang/p/7620425.html)
-
-暂时还没有添加对应的代码上去,因为我觉得上来2个例子有待商榷.
