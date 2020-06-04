@@ -93,10 +93,6 @@ springboot整合netty的demo,并使用Google的protobuf作为心跳数据传输�
 
 3. 因为我们这次demo有2个protobuf文件协议, 如果[在socket上传输多种类型的protobuf数据](https://www.cnblogs.com/Binhua-Liu/p/5577622.html),需要实现自己的编码器和解码器, 不然只能传输一种类型的protobuf数据(测试过), 我比较懒, 所以复制的都是上面的两个文件到自己的工程下, 然后修改一些proto对象转换的几句代码, 在文件最下面可以看到
 
-4. 最后的工程目录截图
-
-   ![](./netty-common/TIM截图20200528114354.png)
-
    
 
 #### client工程
