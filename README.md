@@ -364,11 +364,6 @@ public class HeartBeatServer {
         LOGGER.info("关闭 Netty 成功");
     }
 }
-```
-
-目录结构如下:
-
-![](./netty-server/server.png)
 
 #### 给指定的客户端发送消息
 
@@ -412,8 +407,3 @@ public class DeviceController {
         return sendMsgToDeviceService.sendMsg(imei,builder.build());
     }
 }
-```
-
-最后在网页端发送给客户端(```IMEI:78a8656545454a545e```)发送消息
-
-![](./netty-server/sendMsg.png)
