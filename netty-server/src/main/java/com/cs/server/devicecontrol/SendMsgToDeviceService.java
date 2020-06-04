@@ -31,4 +31,15 @@ public class SendMsgToDeviceService {
             return ("该设备离线, sorry");
         }
     }
+
+    public void sendAllMsg(HeartBeatProtoBuf.HeartBeatPingDTO controlDTO) {
+
+        Map<String, NioSocketChannel> map = NettySocketHolder.getMAP();
+        for (Map.Entry<String,NioSocketChannel> entry:map.entrySet()) {
+            NioSocketChannel nioSocketChannel = entry.getValue();
+            if (Objects.nonNull(nioSocketChannel)) {
+                nioSocketChannel.writeAndFlush(controlDTO);
+            }
+        }
+    }
 }

@@ -27,4 +27,12 @@ public class DeviceController {
         builder.setId(new Random().nextInt(60_000));
         return sendMsgToDeviceService.sendMsg(imei,builder.build());
     }
+
+    @GetMapping("/{content}")
+    public void sendAllMsg(@PathVariable("content")String content){
+        HeartBeatProtoBuf.HeartBeatPingDTO.Builder builder = HeartBeatProtoBuf.HeartBeatPingDTO.newBuilder();
+        builder.setContent(content);
+        builder.setId(new Random().nextInt(60_000));
+        sendMsgToDeviceService.sendAllMsg(builder.build());
+    }
 }

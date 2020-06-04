@@ -35,7 +35,7 @@ public class HeatBeatEchoHandler extends SimpleChannelInboundHandler<HeartBeatPr
                 // 分辨率
                 heatBeatBuilder.setDeviceResolution("1920*1080");
                 // imei
-                heatBeatBuilder.setImei("78a8656545454a545e1");
+                heatBeatBuilder.setImei("78a8656545454a545e3");
                 // 设置是否背光（0：否 1：是）
                 heatBeatBuilder.setIsBlacklight(0);
                 // 屏幕亮度 默认20

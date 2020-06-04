@@ -4,11 +4,14 @@ import com.cs.common.model.HeartBeatProtoBuf;
 import com.cs.server.util.NettySocketHolder;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Date;
 
 
 public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeatProtoBuf.HeartBeatPongDTO> {
@@ -18,6 +21,23 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeat
     // private static final ByteBuf HEART_BEAT = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("ping", CharsetUtil.UTF_8));
     // private static final ByteBuf HEART_BEAT = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("ping", CharsetUtil.UTF_8));
     private static final HeartBeatProtoBuf.HeartBeatPingDTO HEART_BEAT = HeartBeatProtoBuf.HeartBeatPingDTO.newBuilder().setId(123).setContent("6666666").build();
+
+
+    /**
+     * 当客户端主动链接服务端的链接后，这个通道就是活跃的了。也就是客户端与服务端建立了通信通道并且可以传输数据
+     */
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        SocketChannel channel = (SocketChannel) ctx.channel();
+        LOGGER.info("链接报告开始");
+        LOGGER.info("链接报告信息：有一客户端链接到本服务端");
+        LOGGER.info("链接报告IP:" + channel.localAddress().getHostString());
+        LOGGER.info("链接报告Port:" + channel.localAddress().getPort());
+        LOGGER.info("链接报告完毕");
+        //通知客户端链接建立成功
+        String str = "通知客户端链接建立成功" + " " + new Date() + " " + channel.localAddress().getHostString() + "\r\n";
+        ctx.writeAndFlush(str);
+    }
 
     /**
      * 取消绑定

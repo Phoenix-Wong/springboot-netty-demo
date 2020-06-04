@@ -6,21 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-client" />
-        <module name="netty-server" />
         <module name="netty-common" />
+        <module name="netty-server" />
+        <module name="client" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="netty-client" target="1.8" />
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
       <module name="netty-common" target="1.8" />
       <module name="netty-server" target="1.8" />
-      <module name="springboot2.1.4_netty4.1.50.Final_demo" target="1.8" />
+      <module name="springbootNettyDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="netty-client" options="-parameters" />
+      <module name="client" options="-parameters" />
       <module name="netty-common" options="-parameters" />
       <module name="netty-server" options="-parameters" />
     </option>
