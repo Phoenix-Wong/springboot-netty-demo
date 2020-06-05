@@ -72,9 +72,17 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeat
     }
 
 
-
+    /**
+     * 异常处理
+     * @param ctx
+     * @param cause
+     * @throws Exception
+     */
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         LOGGER.info("心跳handler发生Exception:{}",cause.getMessage());
+        ctx.close();
+        NettySocketHolder.remove((NioSocketChannel) ctx.channel());
+        LOGGER.error("移除设备:{}", ctx.channel().id());
     }
 }
