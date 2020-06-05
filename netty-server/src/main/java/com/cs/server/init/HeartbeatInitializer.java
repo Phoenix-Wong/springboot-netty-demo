@@ -36,7 +36,6 @@ public class HeartbeatInitializer extends ChannelInitializer<Channel> {
                 .addLast(new IdleStateHandler(30, 0, 0))
                 .addLast("decoder", new CustomProtobufDecoder())
                 .addLast("encoder", new CustomProtobufEncoder())
-                .addLast(new HeartBeatSimpleHandle())
-        ;
+                .addLast(new HeartBeatSimpleHandle());
     }
 }

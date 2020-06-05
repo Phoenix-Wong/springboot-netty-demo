@@ -13,14 +13,12 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Date;
 
-
+/**
+ * TODO 如何判断是正常断开 以及异常断开(走降级策略)
+ */
 public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeatProtoBuf.HeartBeatPongDTO> {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(HeartBeatSimpleHandle.class);
-    // private static final DeviceControlDTO.DeviceControl HEART_BEAT = DeviceControlDTO.DeviceControl.newBuilder().setDeviceId("001").build();
-    // private static final ByteBuf HEART_BEAT = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("ping", CharsetUtil.UTF_8));
-    // private static final ByteBuf HEART_BEAT = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("ping", CharsetUtil.UTF_8));
-    private static final HeartBeatProtoBuf.HeartBeatPingDTO HEART_BEAT = HeartBeatProtoBuf.HeartBeatPingDTO.newBuilder().setId(123).setContent("6666666").build();
 
 
     /**

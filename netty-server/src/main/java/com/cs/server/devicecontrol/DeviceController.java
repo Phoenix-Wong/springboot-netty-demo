@@ -1,6 +1,7 @@
 package com.cs.server.devicecontrol;
 
 import com.cs.common.model.HeartBeatProtoBuf;
+import com.cs.server.util.NettySocketHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
 import java.util.Random;
 
 @RestController
@@ -34,5 +36,14 @@ public class DeviceController {
         builder.setContent(content);
         builder.setId(new Random().nextInt(60_000));
         sendMsgToDeviceService.sendAllMsg(builder.build());
+    }
+
+    /**
+     * 获取在线用户
+     * @return
+     */
+    @GetMapping("/get/onlineList")
+    public Map getOnlineList(){
+        return NettySocketHolder.getMAP();
     }
 }
