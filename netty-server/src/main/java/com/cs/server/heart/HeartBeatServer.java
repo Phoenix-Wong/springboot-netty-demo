@@ -45,9 +45,7 @@ public class HeartBeatServer {
                 .localAddress(new InetSocketAddress(nettyPort))
                 //保持长连接
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
-                .childHandler(new HeartbeatInitializer())
-//                .childHandler(new HeartbeatInitializer())
-                ;
+                .childHandler(new HeartbeatInitializer());
         //绑定并开始接受传入的连接。
         ChannelFuture future = bootstrap.bind().sync();
         if (future.isSuccess()) {
