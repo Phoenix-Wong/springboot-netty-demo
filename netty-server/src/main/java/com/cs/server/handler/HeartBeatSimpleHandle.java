@@ -20,7 +20,7 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeat
 
     private final static Logger LOGGER = LoggerFactory.getLogger(HeartBeatSimpleHandle.class);
 
-
+    private int loseConnectCount = 0;
     /**
      * 当客户端主动链接服务端的链接后，这个通道就是活跃的了。也就是客户端与服务端建立了通信通道并且可以传输数据
      */
@@ -50,21 +50,30 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<HeartBeat
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        LOGGER.info("触发idleStateEvent");
         if (evt instanceof IdleStateEvent) {
             IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
             if (idleStateEvent.state() == IdleState.READER_IDLE) {
-//                LOGGER.info("已经5秒没有收到信息！给客户端发个信息线");
+                loseConnectCount++;
+                if (loseConnectCount>2){
+                    LOGGER.info("关闭不活跃通道:{}!",ctx.channel().id());
+                    ctx.channel().close();
+                    NettySocketHolder.remove((NioSocketChannel) ctx.channel());
+                }
                 //向客户端发送消息 ,并且添加一个监听器, 如果ta关闭了则服务端也关闭对其监听,并在设备在线列表移除
 //                ctx.writeAndFlush(HEART_BEAT).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
-                LOGGER.info("触发idleStateEvent");
             }
+        }else {
+            super.userEventTriggered(ctx, evt);
         }
-        super.userEventTriggered(ctx, evt);
+
     }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HeartBeatProtoBuf.HeartBeatPongDTO heartBeat) throws Exception {
         LOGGER.info("收到心跳信息:{}", heartBeat.toString());
+        //初始化计数
+        loseConnectCount = 0;
         //我们调用writeAndFlush（Object）来逐字写入接收到的消息并刷新线路
         //ctx.writeAndFlush(customProtocol);
         //保存客户端与 Channel 之间的关系

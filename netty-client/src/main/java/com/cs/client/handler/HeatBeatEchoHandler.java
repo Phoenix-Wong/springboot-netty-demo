@@ -23,7 +23,7 @@ public class HeatBeatEchoHandler extends SimpleChannelInboundHandler<HeartBeatPr
             IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
             if (idleStateEvent.state() == IdleState.WRITER_IDLE) {
                 // 客户端60秒内(writeIdleTimeSeconds)没有给服务端发送消息的话, 会触发这个IdleStateEvent事件, 是时候给服务端发消息说一声:"我还活着", 或者发送个状态信息什么的
-                LOGGER.info("过了 60秒, 是时候给服务器发个Pong心跳消息");
+                LOGGER.info("过了 20秒, 是时候给服务器发个Pong心跳消息");
                 // 向服务端发送消息
                 HeartBeatProtoBuf.HeartBeatPongDTO.Builder heatBeatBuilder = HeartBeatProtoBuf.HeartBeatPongDTO.newBuilder();
                 // 设置设备ip,

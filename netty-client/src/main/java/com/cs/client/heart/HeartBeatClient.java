@@ -3,6 +3,7 @@ package com.cs.client.heart;
 import com.cs.client.init.CustomerHandleInitializer;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Spring 管理 netty client端配置, 说白了跟Spring进行集成就是将自己变成一个Bean交给Spring...(个人看法)
@@ -29,29 +31,58 @@ public class HeartBeatClient {
 
     private SocketChannel socketChannel;
 
+    private Bootstrap bootstrap;
+
+    private ChannelFuture future;
+
     /**
      * @PostConstruct 注解; 在bean初始化的时候回执行这方法
      * @throws InterruptedException
      */
     @PostConstruct
-    public void start() throws InterruptedException {
-        Bootstrap bootstrap = new Bootstrap();
+    public void start() {
         /**
          * NioSocketChannel用于创建客户端通道，而不是NioServerSocketChannel。
          * 请注意，我们不像在ServerBootstrap中那样使用childOption()，因为客户端SocketChannel没有父服务器。
          */
-        bootstrap.group(group).channel(NioSocketChannel.class).handler(new CustomerHandleInitializer());
+        bootstrap = new Bootstrap();
+        bootstrap.group(group)
+                .channel(NioSocketChannel.class)
+                .handler(new CustomerHandleInitializer());
         /**
          * 启动客户端
          * 我们应该调用connect()方法而不是bind()方法。
          */
-        ChannelFuture future = bootstrap.connect(host, nettyPort).sync();
-        if (future.isSuccess()) {
-            LOGGER.info("启动 client Netty 成功");
+        try {
+            this.doConnect();
+            future.channel().closeFuture().sync();
+        }catch (Exception e){
+            LOGGER.info("启动失败",e);
         }
+    }
 
-        socketChannel = (SocketChannel) future.channel();
-
+    protected void doConnect(){
+        if (socketChannel!=null&&socketChannel.isActive()){
+            return;
+        }
+        future = bootstrap.connect(host,nettyPort);
+        future.addListener(new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) throws Exception {
+                if (future.isSuccess()){
+                    socketChannel = (SocketChannel) future.channel();
+                    LOGGER.info("启动 client Netty 成功");
+                }else {
+                    LOGGER.info("连接服务端失败,10s后重试");
+                    future.channel().eventLoop().schedule(new Runnable() {
+                        @Override
+                        public void run() {
+                            doConnect();
+                        }
+                    },10, TimeUnit.SECONDS);
+                }
+            }
+        });
     }
 
     /**
